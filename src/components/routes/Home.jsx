@@ -16,11 +16,11 @@ const Home = () => {
             world experience!
           </p>
         </div>
-        <div className="relative w-36 h-36 md:w-60 md:h-60 lg:w-68 lg:h-68 rounded-full bg-w flex items-center justify-center">
+        <div className="group relative w-36 h-36 md:w-60 md:h-60 lg:w-68 lg:h-68 rounded-full bg-w flex items-center justify-center z-10">
           <h4 className="uppercase text-b text-h5m md:text-h4 font-bellefair">
             Explore
           </h4>
-          <div className="inset-0 absolute w-12/10 h-12/10 rounded-full bg-w opacity-50"></div>
+          <div className="transition-all ease-in-out group-hover:opacity-50 duration-1500 delay-150 bg-w absolute w-12/10 h-12/10 rounded-full opacity-0 z-0"></div>
         </div>
       </div>
     </main>

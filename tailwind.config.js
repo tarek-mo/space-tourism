@@ -3,6 +3,7 @@ module.exports = {
   theme: {
     extend: {
       spacing: { 68: "17.125rem", "12/10": "120%" },
+      translate: { 50: "-50%" },
     },
     fontFamily: {
       sans: "Barlow, sans-serif",
