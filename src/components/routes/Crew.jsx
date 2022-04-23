@@ -31,8 +31,8 @@ const Crew = () => {
           }}
           className="mySwiper"
         >
-          {crew.map((member) => (
-            <SwiperSlide>
+          {crew.map((member, index) => (
+            <SwiperSlide key={index}>
               <CrewMember
                 name={member.name}
                 role={member.role}

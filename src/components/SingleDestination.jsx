@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import { destinations } from "../data.json";
 const SingleDestination = () => {
   const [planets] = useState(destinations);
@@ -22,7 +22,7 @@ const SingleDestination = () => {
                 <button
                   onClick={() => setValue(index)}
                   className={
-                    value == index
+                    value === index
                       ? "uppercase pb-3 transition-all duration-300 hover:text-w tracking-wide border-b-3 border-w "
                       : "uppercase pb-3 text-lb transition-all duration-300 hover:text-w tracking-wide"
                   }

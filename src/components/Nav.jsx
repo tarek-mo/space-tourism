@@ -1,4 +1,4 @@
-import { NavLink } from "react-router-dom";
+import { NavLink, Link } from "react-router-dom";
 import { useRef } from "react";
 import logo from "../backgrounds/logo.svg";
 import xIcon from "../backgrounds/x-icon.svg";
@@ -17,9 +17,9 @@ const Nav = () => {
 
   return (
     <nav className="absolute flex justify-between align-center w-full px-6 md:pl-10 md:pr-0 lg:pl-14 lg:pr-0 py-6 md:py-0 lg:pt-10">
-      <div className="img-container flex align-center">
+      <Link to="/" className="img-container flex align-center">
         <img src={logo} alt="Logo" />
-      </div>
+      </Link>
       <button onClick={toggleMenu} className="inline-block md:hidden">
         <img src={menuIcon} alt="menu icon" />
       </button>

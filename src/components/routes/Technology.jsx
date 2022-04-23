@@ -18,7 +18,7 @@ const Technology = () => {
               <button
                 onClick={() => setValue(index)}
                 className={
-                  index == value
+                  index === value
                     ? "transform w-10 h-10 md:w-16 md:h-16 lg:w-20	lg:h-20 bg-w hover:bg-w rounded-full font-bellefair text-db hover:text-db text-base md:text-2xl lg:text-3xl hover:scale-110 transition-all duration-300 border-1 border-g"
                     : "transform w-10 h-10 md:w-16 md:h-16 lg:w-20	lg:h-20 bg-transparent hover:bg-w rounded-full font-bellefair text-w hover:text-db text-base md:text-2xl lg:text-3xl hover:scale-110 transition-all duration-300 border-1 border-g"
                 }
